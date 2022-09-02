@@ -1454,11 +1454,11 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝ 
+let teks = `╚» 𝗧𝗔𝗚 𝗔𝗟𝗟 «╝ 
  
- ➲ *Message : ${q ? q : 'no message'}*\n\n`
+ ➲ *Message : ${q ? q : '𝗡𝗢 𝗠𝗦𝗚 ...'}*\n\n`
                 for (let mem of participants) {
-                teks += `🐦 @${mem.id.split('@')[0]}\n`
+                teks += `➫ @${mem.id.split('@')[0]}\n`
                 }
                 GojoMdNx.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
@@ -1759,26 +1759,26 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: 'Script🔖',
+                                    displayText: '𝗛𝗢𝗦𝗧𝗜𝗡𝗚',
                                     url: `${sc}`
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: '𝗪𝗘𝗕',
                                     url: `${myweb}`
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🎀Menu🎀',
+                                    displayText: '𝗠𝗘𝗡𝗨',
                                     id: 'menu'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: '𝗢𝗪𝗡𝗘𝗥',
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 GOJO-SATORU HERE🎉 」\n\n${text}`
+                      let txt = `「 𝗘𝗭𝗜𝗢 𝗕𝗢𝗧 𝗪𝗠 」\n\n${text}`
                       GojoMdNx.send5ButImg(i, txt, GojoMdNx.user.name, global.thumb, btn)
                     }
                 reply(`Successful Sending Broadcast To ${anu.length} Group(s)`)
@@ -2047,9 +2047,9 @@ break
                 google({'query': text}).then(res => {
                 let teks = `Google Search Title : ${text}\n\n`
                 for (let g of res) {
-                teks += `🐦 *Title* : ${g.title}\n`
-                teks += `🐦 *Description* : ${g.snippet}\n`
-                teks += `🐦 *Link* : ${g.link}\n\n────────────────────────\n\n`
+                teks += `🪐 *Title* : ${g.title}\n`
+                teks += `🪐 *Description* : ${g.snippet}\n`
+                teks += `🪐 *Link* : ${g.link}\n\n────────────────────────\n\n`
                 } 
                 reply(teks)
                 })
@@ -2919,11 +2919,11 @@ break
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
 			caption: `
-🐦 Title : ${anu.title}
-🐦 Author : ${anu.author.name}
-🐦 Like : ${anu.like}
-🐦 Caption : ${anu.caption}
-🐦 Url : ${anu.media[0]}
+🪐 Title : ${anu.title}
+🪐 Author : ${anu.author.name}
+🪐 Like : ${anu.like}
+🪐 Caption : ${anu.caption}
+🪐 Url : ${anu.media[0]}
 To Download Media, Please Click One Of The Buttons Below Or Enter The ytmp3/ytmp4 Command With The Url Above
 `,
 			footer: GojoMdNx.user.name,
@@ -3407,17 +3407,17 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🍇All Menu🍇',
+                                    displayText: '𝗔𝗟𝗟 𝗠𝗘𝗡𝗨',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '🍒List Menu🍒',
+                                    displayText: '𝗟𝗜𝗦𝗧 𝗕𝗢𝗧',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: '𝗢𝗪𝗡𝗘𝗥',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3623,7 +3623,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 case 'allmenu': {
   	anu = `
 ┏━「 *${botname}* 」━━⭓ 
-┃╔══☯︎「 MAIN 」☯︎
+┃╔══☯︎「 𝗠𝗔𝗜𝗡 」☯︎
 ┃╠ ${prefix}alive
 ┃╠ ${prefix}script
 ┃╠ ${prefix}speedtest
